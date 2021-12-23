@@ -1,0 +1,14 @@
+/* Descendent Combinator */
+div p {
+  text-align: center;
+  color: red;
+  background-color: yellow;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* General Sibling Combinator. All the <p> siblings (i.e at the same level) of <div> will be selected */
+div ~ p {
+  font-size: 30px;
+  font-weight: 600;
+}

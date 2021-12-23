@@ -1,0 +1,30 @@
+.cs1 {
+  background-color: rgb(255, 171, 157);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 35px;
+}
+
+/* Order rule will be applied in below case, i.e since both .cs1 and .cs2 have same specificity for Number-3 element, 
+the rule which is defined later in the code will be applied. */
+/* .cs2 {
+  font-size: 50px;
+} */
+
+/* Using chaining selector */
+.cs1.cs2 {
+  font-size: 50px;
+}
+
+#id1 {
+  font-size: 70px;
+  color: blue;
+  font-weight: 500;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#id2 {
+  background-color: lightgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}

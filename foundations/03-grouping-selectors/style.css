@@ -1,0 +1,17 @@
+.btn1,
+.btn2 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 28px;
+  border-width: 3px;
+}
+
+.btn1 {
+  color: white;
+  background-color: black;
+  border-color: rgb(182, 182, 182);
+}
+
+.btn2 {
+  background-color: yellow;
+  border-color: rgb(250, 247, 247);
+}
