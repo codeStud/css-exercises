@@ -1,5 +1,11 @@
+/* Again, start from ground-up. Make things inline first by declaring proper
+flex-container and flex-items. Then for vertical alignment, use flex-direction as 'column'.
+Also, as already discussed, to align items across the main-axis, there isn't justify-items property
+=> using padding and margin to shift items left, center or right...
+And use 'gap' property to give gap between the flex-items. */
+
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 img {
@@ -24,3 +30,53 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* MY SOLUTION */
+.title {
+  text-align: center;
+}
+
+.plants {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 14rem;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.text {
+  text-align: center;
+}
+
+/* An extra step from my side */
+@media only screen and (max-width: 900px) {
+  .plants {
+    flex-direction: column;
+  }
+}
+
+/* A BETTER SOLUTION */
+/* body {
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 32px;
+}
+
+.plants {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  max-width: 200px;
+} */
