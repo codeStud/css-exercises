@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
   height: 100vh;
@@ -24,4 +24,68 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* ---------------My Solution--------------- */
+/* 0. Center things as desired */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*  1. Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #bdbdbd12;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Extra Stuff */
+a:hover {
+  color: grey;
+  text-shadow: 0px 15px 20px rgba(46, 229, 157, 0.8);
+}
+
+.right-links {
+  margin-right: 32px;
+}
+
+/* 2. Content */
+.content {
+  text-align: center;
+}
+
+button {
+  width: auto;
+  height: 30px;
+  /* Extra stuff */
+  border: 0.5px solid grey;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Extra stuff */
+button:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+/* 3. Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a3a3a33b;
 }
